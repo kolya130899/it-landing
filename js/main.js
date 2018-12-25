@@ -1,8 +1,10 @@
+
 		//DROPDOWN MENU
 $(document).ready(function(){
+	console.log($(document).width());
 	var $menu = $('#nav li');
 	$menu.hide();
-	var wind = $(window).width();
+	var wind = $(document).width();
 	var attrib = $menu.attr('style');
 	console.log(attrib);
 	if (wind >= 1200 ){

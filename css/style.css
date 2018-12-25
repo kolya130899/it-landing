@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700');
 body{
 	font-family: 'Roboto', sans-serif;
 }
@@ -102,14 +103,54 @@ p{
 	letter-spacing: 3px;
 	padding-top: 35px;
 }
+.pennywise{
+	padding: 150px 10px 30px 10px;
+	background:url('../img/bg/penni-bg.png') 40% no-repeat, rgb(0,0,0) ;
+	background-size: cover;
+	font-family: 'Roboto Slab', serif;
+	font-weight: bold;
+}
+
+.im{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	color: #cd210e;
+	font-size: calc(3rem + 1vw);
+}
+.im h2{
+	width: calc(450px + 1vw);
+}
+.im h1{
+	position: absolute;
+	bottom: -40px;
+	font-size: calc(6.25rem + 1vw);
+	color: #cd210e;
+}
+.it-photo{
+	float: right;
+	width: 450px;
+	height: 100%;
+	margin: 0 auto;
+}
+.pennywise h3{
+	margin: 100px 0 30px 0;
+	font-size: calc(1.625rem + 1vw);
+	color: black;
+
+}
 
 
 
 @media screen and (max-width: 1200px){
-	/*.logo{
-		margin: 0 auto;
+	.logo{
+		display: none;
 
-	}*/
+	}
 }
 
 
