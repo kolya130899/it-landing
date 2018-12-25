@@ -133,7 +133,7 @@ p{
 }
 .im h1{
 	position: absolute;
-	bottom: calc(-30px - 3vw);
+	bottom: calc(-30px - 4vw);
 	width: 100%;
 	font-size: calc(2.25rem + 6vw);
 	color: #cd210e;
@@ -148,6 +148,40 @@ p{
 	margin: 100px auto 30px auto;
 	font-size: calc(.5rem + 2vw);
 	color: black;
+}
+.storyline{
+	background-color: black;
+	padding: 262px 0 266px 0;
+
+}
+.storyline__text{
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+}
+.storyline__text h1{
+	color: #430606;
+	font-size: calc(2.25rem + 6vw);
+	font-family: 'Roboto Slab', serif;
+	font-weight: bold;
+}
+.storyline__text p{
+	position: absolute;
+	max-width: 775px;
+	bottom: -70px;
+	left: 30%;
+	color: white;
+	font-size: calc(.5rem + 1vw);
+}
+.trailer{
+	background-color: black;
+	display: flex;
+
+}
+.trailer-1{
+	width: 80%;
+	height: 500px;
+	margin: 0 auto;
 }
 
 
