@@ -159,6 +159,9 @@ p{
 	}
 }
 @media screen and (max-width: 576px){
+	.header{
+		padding: 20px 10px 55px 10px;
+	}
 	.pennywise{
 		padding: 200px 20px 85px 20px;
 	}
