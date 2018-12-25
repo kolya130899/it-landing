@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,900');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700');
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
 body{
 	font-family: 'Roboto', sans-serif;
 }
@@ -10,6 +11,10 @@ h1{
 p{
 	margin: 0;
 	padding: 0;
+}
+.red{
+	font-family: 'Homemade Apple', cursive;
+	color: red;/*#a12f2f*/
 }
 .header{
 	padding: 40px 40px 75px 40px;
@@ -22,6 +27,9 @@ p{
 	width: 40px;
 	height: 40px;
 }
+.my-toggle-btn{
+	cursor: pointer;
+}
 .nav-list{
 	position: absolute;
 	list-style-type: none;
@@ -31,7 +39,8 @@ p{
 .nav-list li{
 	padding-bottom: 10px;
 	color: white;/*#a12f2f;*/
-	min-width: 150px;
+	min-width: 200px;
+	font-size: calc(.5em + 1vw);
 }
 
 .header-social{
@@ -99,7 +108,9 @@ p{
 	padding-top: 35px;
 }
 .pennywise{
-	padding: 150px 10px 30px 10px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 200px 100px 85px 100px;
 	background:url('../img/bg/penni-bg.png') 40% no-repeat, rgb(0,0,0) ;
 	background-size: cover;
 	font-family: 'Roboto Slab', serif;
@@ -111,32 +122,32 @@ p{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	width: 80%;
-	height: auto;
-	margin: 0 auto;
+	width: 100%;
 	color: #cd210e;
-	font-size: calc(3rem + 1vw);
+
 }
 .im h2{
-	width: calc(450px + 1vw);
+	display: block;
+	font-size: calc(1rem + 5vw);
+	max-width: 60%;
 }
 .im h1{
 	position: absolute;
-	bottom: -40px;
-	font-size: calc(6.25rem + 1vw);
+	bottom: calc(-30px - 3vw);
+	width: 100%;
+	font-size: calc(2.25rem + 6vw);
 	color: #cd210e;
+	text-align: center;
 }
 .it-photo{
-	float: right;
-	width: 450px;
+	display: block;
+	width: 40%;
 	height: 100%;
-	margin: 0 auto;
 }
 .pennywise h3{
-	margin: 100px 0 30px 0;
-	font-size: calc(1.625rem + 1vw);
+	margin: 100px auto 30px auto;
+	font-size: calc(.5rem + 2vw);
 	color: black;
-
 }
 
 
@@ -145,6 +156,11 @@ p{
 	.logo{
 		display: none;
 
+	}
+}
+@media screen and (max-width: 576px){
+	.pennywise{
+		padding: 200px 20px 85px 20px;
 	}
 }
 

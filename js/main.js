@@ -14,34 +14,9 @@ $(document).ready(function(){
 		if (atr === 'display: none;') {
 			menu.show('slow');
 			menu.attr('style','display: block;');
-			/*menu.removeAttr('style');
-			*/
 		}
 		else{
 			menu.hide('slow');
-			/*menu.removeAttr('style');
-			menu.attr('style','display: none;');*/
 		}
 	});
-
-
-	/*console.log($(document).width());
-
-	menu.hide();
-	var wind = $(document).width();
-
-	if (wind >= 1200 ){
-		$('.my-toggle-btn').hover(
-			function(){
-
-				},
-			function(){
-					menu.stop().slideUp(2000);
-				}
-
-		);
-	}
-	else {
-
-	}*/
 });
