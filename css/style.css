@@ -12,7 +12,7 @@ p{
 	padding: 0;
 }
 .header{
-	height: 1080px;
+	padding: 40px 40px 75px 40px;
 	background: linear-gradient(to bottom , rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .8) 60%), url('../img/penni.png') 50% no-repeat;
 	background-size: cover;
 }
@@ -21,30 +21,25 @@ p{
 	display: inline-block;
 	width: 40px;
 	height: 40px;
-	margin-top: 40px;
 }
 .nav-list{
 	position: absolute;
 	list-style-type: none;
 	color: white;
-	transition: 2s;
+
 }
 .nav-list li{
 	padding-bottom: 10px;
 	color: white;/*#a12f2f;*/
+	min-width: 150px;
 }
-.is-open{
-	display: block;
-}
-.is-hidden{
-	display: none;
-}
+
 .header-social{
 	display: inline-block;
 	width: 82px;
 	height: 26px;
 	float: right;
-	margin-top: 50px;
+	margin-top: 10px;
 
 }
 .social-1{
@@ -161,71 +156,3 @@ p{
 
 
 
-
-
-
-/*body{
-	background-color: #050100;
-	padding: 0;
-	margin: 0;
-}
-.my-header{
-	text-align: center;
-}
-.my-nav-list{
-	display: none;
-	list-style-type: none;
-	padding: 0;
-	background: url('../img/bg/menu-bg.png') no-repeat;
-	background-size: cover;
-	padding: 0 0 200px 0;
-}
-.my-nav-list li{
-	padding: 10px 0 10px 5px;
-	font-size: 20px;
-
-}
-.my-nav-item a{
-	color: black;
-	font-weight: bold;
-	text-decoration: none;
-}
-.my-close{
-	width: 48px;
-	height: 48px;
-	padding: 0 0 75px 0;
-	cursor: pointer;
-}
-.my-toggle-button{
-	width: 48px;
-	cursor: pointer;
-}
-.it-logo{
-	margin-top: 235px;
-	margin-left: 50%;
-}
-.is-active{
-	display: block;
-}
-.is-hidden{
-	display: none;
-}*/
-/*.my-nav-list li{
-	display: block !important;
-	width: 100%;
-}
-.header{
-	background: url('../img/penni.png') no-repeat;
-}
-.my-nav-list{
-	max-width: 300px;
-	background: url('../img/bg/menu-bg.png')
-}
-.my-toggle-button(.show){
-	display:none;
-}
-.fa-facebook{
-	width: 20px;
-	height: 20px;
-}
-*/
