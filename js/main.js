@@ -1,15 +1,32 @@
 		//DROPDOWN MENU
-var $menu = $('#nav li');
-$menu.hide();
-$('.my-toggle-btn').hover(
-	function(){
-			$menu.stop().slideDown(2000);
-		},
-	function(){
-			$menu.stop().slideUp(2000);
-		}
+$(document).ready(function(){
+	var $menu = $('#nav li');
+	$menu.hide();
+	var wind = $(window).width();
+	var attrib = $menu.attr('style');
+	console.log(attrib);
+	if (wind >= 1200 ){
+		$('.my-toggle-btn').hover(
+			function(){
+					$menu.stop().slideDown(2000);
+				},
+			function(){
+					$menu.stop().slideUp(2000);
+				}
 
-);
+		);
+	}
+	else {
+		$('.my-toggle-btn').on('click', function(){
+			if (attrib === 'display: none;') {
+				$menu.removeAttr('style')
+			}
+			else{
+				$menu.attr('style', attrib);
+			}
+		});
+	}
+});
 /*$(document).on("click", function (e) {
    if (!$menu.is(e.target) //if not menu...
    && $menu.has(e.target).length === 0)//...and not child of menu
