@@ -11,16 +11,16 @@
    adaptiveWidht: true,
    responsive: [
      {
-       breakpoint: 768,
+       breakpoint: 992,
        settings: {
          arrows: false,
          centerMode: true,
          centerPadding: '20px',
-         slidesToShow: 1
+         slidesToShow: 2
        }
      },
      {
-       breakpoint: 480,
+       breakpoint: 768,
        settings: {
          arrows: false,
          centerMode: true,
