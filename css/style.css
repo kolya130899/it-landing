@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,900');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700');
 @import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
+@import url('slick.css');
 body{
 	font-family: 'Roboto', sans-serif;
 }
@@ -40,7 +41,7 @@ p{
 	padding-bottom: 10px;
 	color: white;/*#a12f2f;*/
 	min-width: 200px;
-	font-size: calc(.5em + 1vw);
+	font-size: calc(1em + 1vw);
 }
 
 .header-social{
@@ -168,7 +169,7 @@ p{
 .storyline__text p{
 	position: absolute;
 	max-width: 775px;
-	bottom: -70px;
+	bottom: -40px;
 	left: 30%;
 	color: white;
 	font-size: calc(.5rem + 1vw);
@@ -176,13 +177,80 @@ p{
 .trailer{
 	background-color: black;
 	display: flex;
+	behavior:scroll;
 
 }
 .trailer-1{
 	width: 80%;
-	height: 500px;
+	height: calc(400px + 5vw);
 	margin: 0 auto;
 }
+.gallery{
+	padding: 195px 0 100px 0;
+	background-color: black;
+}
+.center{
+	width: 100%;
+	height: 300px;
+	margin: 0 auto;
+}
+.slide{
+	width: auto;
+	height: 330px;
+	margin-left: 10px;
+}
+.img-slide{
+	width: 100%;
+	height: 100%;
+}
+.cast{
+	padding: 500px 150px 900px 0;
+	background: url('../img/bg/about-bg.png') 50% no-repeat;
+	background-size: cover;
+}
+.cast__description{
+	width: 500px;
+	color: white;
+	margin-left: 60%;
+	text-align: justify;
+}
+.companies{
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+}
+.new-line{
+	width: 105px;
+	height: 65px;
+
+}
+.warner-brothers{
+	width: 75px;
+	height: 65px;
+}
+.it-footer{
+	background-color: black;
+	padding: 45px 0 45px 0;
+}
+.footer-nav{
+	padding: 0;
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	list-style-type: none;
+	color: white;
+
+}
+.footer-nav li{
+	color: white;/*#a12f2f;*/
+	font-size: 18px;
+	display: flex;
+	margin: 0 auto;
+}
+
 
 
 
