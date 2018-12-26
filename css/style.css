@@ -26,6 +26,7 @@ a:hover{
 	color: red;/*#a12f2f*/
 }
 .header{
+	position: relative;
 	padding: 40px 40px 75px 40px;
 	background: linear-gradient(to bottom , rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .8) 60%), url('../img/penni.png') 50% no-repeat;
 	background-size: cover;
@@ -312,9 +313,28 @@ a:hover{
 @media screen and (max-width: 992px){
 	.footer-nav{
 		width: 80%;
-
+	}
+	.nav-list{
+		position: absolute;
+		list-style-type: none;
+		width: 90%;
+		padding: 0;
+		margin: 0 auto;
+		text-align: center;
 
 	}
+	.nav-list li{
+		padding: 5px 0;
+		background-color: white;
+		width: 100%;
+	}
+	.nav-list a{
+		color: black;
+	}
+	.nav-list li:hover{
+		transform: scale(1, 1);
+	}
+
 }
 @media screen and (max-width: 576px){
 	.header{
@@ -327,12 +347,14 @@ a:hover{
 		display: none;
 	}
 	.you-float-too-shadow{
-
+		bottom: 50px;
+		right: 50px;
 		font-size: calc(1.5rem + 5vw);
 
 	}
 	.you-float-too{
-
+		bottom: 25px;
+		right: 25px;
 		font-size: calc(1.25rem + 5vw);
 
 	}
