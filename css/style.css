@@ -288,6 +288,9 @@ a:hover{
 	margin: 0 5px;
 	text-align: justify;
 }
+.hidden{
+	display: block;
+}
 
 
 
@@ -307,7 +310,11 @@ a:hover{
 
 }
 @media screen and (max-width: 992px){
+	.footer-nav{
+		width: 80%;
 
+
+	}
 }
 @media screen and (max-width: 576px){
 	.header{
@@ -315,6 +322,19 @@ a:hover{
 	}
 	.pennywise{
 		padding: 200px 20px 85px 20px;
+	}
+	.hidden{
+		display: none;
+	}
+	.you-float-too-shadow{
+
+		font-size: calc(1.5rem + 5vw);
+
+	}
+	.you-float-too{
+
+		font-size: calc(1.25rem + 5vw);
+
 	}
 }
 
