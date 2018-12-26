@@ -23,7 +23,7 @@ a:hover{
 }
 .red{
 	font-family: 'Homemade Apple', cursive;
-	color: red;/*#a12f2f*/
+	color: red;
 }
 .header{
 	position: relative;
@@ -44,16 +44,20 @@ a:hover{
 	position: absolute;
 	list-style-type: none;
 	color: white;
+	min-width: 200px;
 
 }
 .nav-list li{
 	padding-bottom: 10px;
-	color: white;/*#a12f2f;*/
-	min-width: 200px;
+	color: white;
 	font-size: calc(1em + 1vw);
+	width: 100%;
 }
 .nav-list li:hover{
 	transform: scale(1, 1);
+}
+.nav-list a{
+	width: 100% !important;
 }
 
 .header-social{
@@ -209,8 +213,8 @@ a:hover{
 }
 .slide{
 	float: inherit;
-	          display: inline-block !important;
-	          vertical-align: middle;
+	display: inline-block !important;
+	vertical-align: middle;
 	width: auto;
 	height: 100%;
 	margin-left: 10px;
@@ -233,7 +237,7 @@ a:hover{
 }
 .companies{
 	width: 200px;
-	margin: 0 auto;
+	margin: 0 auto 20px auto;
 	text-align: center;
 }
 .new-line{
@@ -283,7 +287,7 @@ a:hover{
 
 }
 .footer-nav li{
-	color: white;/*#a12f2f;*/
+	color: white;
 	font-size: 18px;
 	display: flex;
 	margin: 0 5px;
@@ -292,9 +296,6 @@ a:hover{
 .hidden{
 	display: block;
 }
-
-
-
 @media screen and (min-width: 1200px){
 	.nav-list li{
 		font-size: calc(.5em + 1vw);
@@ -306,9 +307,7 @@ a:hover{
 @media screen and (max-width: 1200px){
 	.logo{
 		display: none;
-
 	}
-
 }
 @media screen and (max-width: 992px){
 	.footer-nav{
@@ -321,7 +320,6 @@ a:hover{
 		padding: 0;
 		margin: 0 auto;
 		text-align: center;
-
 	}
 	.nav-list li{
 		padding: 20px 0;
@@ -338,8 +336,8 @@ a:hover{
 		position: static;
 		width: 90%;
 		margin-top: 30px;
+		text-align: justify;
 	}
-
 }
 @media screen and (max-width: 768px){
 	.im{
@@ -348,7 +346,6 @@ a:hover{
 		align-items: center;
 		width: 100%;
 		color: #cd210e;
-
 	}
 	.im h2{
 		display: block;
@@ -388,15 +385,12 @@ a:hover{
 		bottom: 50px;
 		right: 50px;
 		font-size: calc(1.5rem + 5vw);
-
 	}
 	.you-float-too{
 		bottom: 25px;
 		right: 25px;
 		font-size: calc(1.25rem + 5vw);
-
 	}
-
 }
 
 
